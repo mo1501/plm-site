@@ -89,24 +89,39 @@ a:hover {
     text-decoration: underline;
 }
 
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.sticky {
+    position: fixed;
+}
+
 .main-heading-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0;
 }
 
 .main-heading {}
 
-.project-info-section{
-    background-color: white;
-    margin: 1rem;
-}
-.project-milestones-section{
+.project-info-section {
     background-color: white;
     margin: 1rem;
 }
 
-.weekly-rag-section{
+.project-milestones-section {
+    background-color: white;
+    margin: 1rem;
+}
+
+
+.weekly-rag-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -117,19 +132,24 @@ a:hover {
     height: 9rem;
     width: 100%;
 }
-.weekly-rag{
+
+.weekly-rag {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .vertical-rule {
-    border-left: 2px solid black; /* Change the color and width as needed */
-    height: 60px; /* Adjust the height of the vertical rule */
-    margin: 0 20px; /* Optional margin for spacing */
+    border-left: 2px solid black;
+    /* Change the color and width as needed */
+    height: 60px;
+    /* Adjust the height of the vertical rule */
+    margin: 0 20px;
+    /* Optional margin for spacing */
 }
 
-.risks-issues-container{
+.risks-issues-container {
     background-color: white;
     border-radius: 1.5rem;
     margin: 1rem;
@@ -137,32 +157,35 @@ a:hover {
     width: 18rem;
     margin-right: 0px;
 }
-.issue-section{
+
+.issue-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0.2rem;
 }
-.risks-notification{
+
+.risks-notification {
     display: flex;
     flex-direction: column;
     margin: 0.2rem;
 }
-.risks-issues-section{
+
+.risks-issues-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.notification{
+
+.notification {
     text-align: center;
 }
 
-.dependecies-container{
+.dependecies-container {
     background-color: white;
     border-radius: 1.5rem;
     margin: 1rem;
     height: 9rem;
     width: 18rem;
 }
-

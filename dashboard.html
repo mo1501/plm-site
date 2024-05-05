@@ -10,77 +10,107 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
+
 </head>
 
 <body>
-    <main>
-        <div class="main-heading-container">
-            <h1 class="main-heading">Weekly Report</h1>
+    <header style="
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;;
+    align-items: center;
+    ">
+
+        <div class="hamburger-menu" id="hamburgerMenu" style="cursor: pointer;">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </main>
+
+        <h1 class="main-heading" style="text-align: center;color: white;  margin: 0 auto;">Weekly Report</h1>
+
+
+    </header>
     <div class="container">
         <div class="row">
-            <div class="col-4 info-and-milestones-section bg-success">
-                <div class="project-info-section">
-                    <div class="card" style="width: 18rem;">
+            <div class="col-4 info-and-milestones-section">
+                <div class="project-info-section" style="border-radius: 20px; height: 30%; margin-bottom: 8rem;">
+                    <div class="card" style="width: 100%; height: 100%;">
                         <div class="card-body">
-                            <h5 class="card-title">KCB Extreme SDN</h5>
-                            <p class="card-text">SUPPLY IMPLEMENTATION AND MAINTENANCE OF
+                            <h5 class="card-title" style="font-size: x-large; font-weight: 800; color: red;">KCB Extreme
+                                SDN</h5>
+                            <p class="card-text" style="color: #00AEEF; text-align:left;">SUPPLY IMPLEMENTATION AND
+                                MAINTENANCE OF
                                 SOFTWARE DEFINED NETWORK WIDE AREA NETWORK FOR KCB BANK DATA CENTERS
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Customer: Kenya Commercial Bank</li>
-                            <li class="list-group-item">Contractor: Konvergenz</li>
-                            <li class="list-group-item">Target End Date: Apr 26 2024</li>
-                            <li class="list-group-item">Partners: Milky Way Limited</li>
+                            <li class="list-group-item" style="color: #AFAFAF;">Customer: Kenya Commercial Bank</li>
+                            <li class="list-group-item" style="color: #AFAFAF;">Contractor: Konvergenz</li>
+                            <li class="list-group-item" style="color: red;">Target End Date: Apr 26 2024</li>
+                            <li class="list-group-item" style="color: #AFAFAF;">Partners: Milky Way Limited</li>
                         </ul>
                     </div>
                 </div>
-                <div class="project-milestones-section">
-                    <p>Milestones</p>
-                    <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item">Milestone</li>
-                        <li class="list-group-item">Due Date</li>
-                        <li class="list-group-item">Status</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-sm">
-                        <li class="list-group-item">Preparation phase</li>
-                        <li class="list-group-item">Oct 05, 2023</li>
-                        <li class="list-group-item">Completed</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-lg">
-                        <li class="list-group-item">Planning phase</li>
-                        <li class="list-group-item">Oct 15, 2023</li>
-                        <li class="list-group-item">Completed</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-lg">
-                        <li class="list-group-item">Implementation phase</li>
-                        <li class="list-group-item">Oct 25, 2023</li>
-                        <li class="list-group-item">Completed</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-xl">
-                        <li class="list-group-item">Testing phase</li>
-                        <li class="list-group-item">Nov 05, 2023</li>
-                        <li class="list-group-item">Pending</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-xxl">
-                        <li class="list-group-item">Project Closure</li>
-                        <li class="list-group-item">Nov 15, 2023</li>
-                        <li class="list-group-item">Pending</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-xxl">
-                        <li class="list-group-item">Training phase</li>
-                        <li class="list-group-item">Nov 25, 2023</li>
-                        <li class="list-group-item">Pending</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-xxl">
-                        <li class="list-group-item">Support phase</li>
-                        <li class="list-group-item">Dec 05, 2023</li>
-                        <li class="list-group-item">Pending</li>
-                    </ul>
+                <div class="project-milestones-section" style="border-radius: 20px; height: 50%;">
+                    <p style="text-align: center; color: #00AEEF; margin: 0rem auto; font-size: large;">Milestones</p>
+                    <table class="table" style="font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="color: #AFAFAF;">Milestone</th>
+                                <th scope="col" style="color: #AFAFAF;">Due Date</th>
+                                <th scope="col" style="color: #AFAFAF;">Status</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">Preparation phase</th>
+                                <td>Oct 05, 2023</td>
+                                <td style="color: #03B60A">Completed</td>
+
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">Planning phase</th>
+                                <td>Oct 15, 2023</td>
+                                <td style="color: #03B60A">Completed</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Implementation phase</th>
+                                <td>Oct 25, 2023</td>
+                                <td style="color: #03B60A">Completed</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Testing phase</th>
+                                <td>Nov 05, 2023</td>
+                                <td style="color: #FDA905">Pending</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Project Closure</th>
+                                <td>Nov 15, 2023</td>
+                                <td style="color: #FDA905">Pending</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Training phase</th>
+                                <td>Nov 25, 2023</td>
+                                <td style="color: #FDA905">Pending</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Support phase</th>
+                                <td>Dec 05, 2023</td>
+                                <td style="color: #FDA905">Pending</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="col-8 rag-dependencies-okrs-section bg-info">
+            <div class="col-8 rag-dependencies-okrs-section">
                 <div class="container ">
                     <div class="row">
                         <div class="col-3 weekly-rag-container">
@@ -153,7 +183,7 @@
                                         <p
                                             style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
                                             Ongoing</p>
-                                        <div class="notification" style="border: 4px solid aqua;border-radius: 50%;">
+                                        <div class="notification" style="border: 4px solid aqua;border-radius: 50%; ">
                                             <p style="text-align: center; margin: 0.3rem; font-size: 1.5rem;">3</p>
                                         </div>
                                     </div>
@@ -165,7 +195,11 @@
                                             style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
                                             Resolved</p>
                                         <div class="notification" style="border: 4px solid green;border-radius: 50%;">
-                                            <p style="text-align: center; margin: 0.3rem; font-size: 1.5rem;">5</p>
+                                            <p style="text-align: center; 
+                                            margin: 0.3rem; 
+                                            font-size: 1.5rem;
+                                            
+                                            ">5</p>
                                         </div>
                                     </div>
                                 </div>
@@ -174,19 +208,596 @@
 
                     </div>
                 </div>
-                <div class="okr-section"></div>
+                <div class="container okr-section col-11 " style="background-color: white; 
+                margin: 1.2rem;
+                height: 20rem;
+                overflow: auto;
+                border-radius: 20px;
+                ">
+                    <div class="okr-section-header"
+                        style="display: flex; flex-direction: column; justify-content: center;">
+                        <p style="text-align: center; margin-bottom: 0;">Ongoing and planned activities for this week
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="this-week-okr-section">
+                        <p>This Week's OKRS</p>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container requirements-container col-11 " style="background-color: white; 
+                margin: 1.2rem;
+                height: 20rem;
+                overflow: auto;
+                border-radius: 20px;
+                ">
+                    <div class="requirements-section-header"
+                        style="display: flex; flex-direction: column; justify-content: center;">
+                        <p style="text-align: center; margin-bottom: 0;">Requirements and Key Dependencies</p>
+                        <hr>
+                    </div>
+                    <div class="requirements-dependecies-section">
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: aqua; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="requirements-section"></div>
             </div>
         </div>
     </div>
-    <div class="key-issues-and-risks-section bg-info">
-        <p>hi</p>
+    <div class="container col-12 key-issues-and-risks-section" style="
+        margin: 3rem;
+        margin-top: 1rem;
+        background-color: white;
+        height: 25rem;
+        width: 100%;
+    ">
+        <div class="requirements-section-header"
+            style="display: flex; flex-direction: column; justify-content: center; border-radius: 20px;">
+            <p style="text-align: center; margin-bottom: 0;">Key Risks, Issues and Decisions</p>
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">Issue</th>
+                        <th scope="col">Support Required</th>
+                        <th scope="col">Escalated To</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Created On</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
+                        <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
+                        <td>
+                            <div class="account-avatar-container" style="background-color: aqua; 
+                        border-radius: 50%;
+                        height: 3rem;
+                        width: 3rem;
+                        margin-right: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        ">
+                                BH
+                            </div>
+                        </td>
+                        <td>HIGH</td>
+                        <td>
+                            <div class="status-container " style="
+                            background-color: #35FA03;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Completed
+                            </div>
+                        </td>
+                        <td>Oct 23,2023</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
+                        <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
+                        <td>
+                            <div class="account-avatar-container" style="background-color: aqua; 
+                        border-radius: 50%;
+                        height: 3rem;
+                        width: 3rem;
+                        margin-right: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        ">
+                                BH
+                            </div>
+                        </td>
+                        <td>HIGH</td>
+                        <td>
+                            <div class="status-container " style="
+                            background-color: yellow;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Pending
+                            </div>
+                        </td>
+                        <td>Oct 23,2023</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
+                        <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
+                        <td>
+                            <div class="account-avatar-container" style="background-color: blueviolet; 
+                        border-radius: 50%;
+                        height: 3rem;
+                        width: 3rem;
+                        margin-right: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        ">
+                                BH
+                            </div>
+                        </td>
+                        <td>HIGH</td>
+                        <td>
+                            <div class="status-container " style="
+                            background-color: aqua;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            ">
+                                Ongoing
+                            </div>
+                        </td>
+                        <td>Oct 23,2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 
 
     <!-- Bootstrap JS (optional, if needed) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
