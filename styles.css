@@ -123,14 +123,15 @@ a:hover {
 
 .weekly-rag-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    margin-right: 0.2rem;
     background-color: white;
     border-radius: 1.5rem;
     height: 9rem;
-    width: 100%;
+    width: 20%;
 }
 
 .weekly-rag {
@@ -143,7 +144,7 @@ a:hover {
 .vertical-rule {
     border-left: 2px solid black;
     /* Change the color and width as needed */
-    height: 60px;
+    height: 90%;
     /* Adjust the height of the vertical rule */
     margin: 0 20px;
     /* Optional margin for spacing */
@@ -154,7 +155,7 @@ a:hover {
     border-radius: 1.5rem;
     margin: 1rem;
     height: 9rem;
-    width: 18rem;
+    width: 35%;
     margin-right: 0px;
 }
 
@@ -187,5 +188,17 @@ a:hover {
     border-radius: 1.5rem;
     margin: 1rem;
     height: 9rem;
-    width: 18rem;
+    width: 35%;
+}
+.requirements-table tbody,
+.requirements-table th,
+.requirements-table tr {
+    border-right: 2px solid #AFAFAF;
+    border-bottom: 3px solid #AFAFAF;
+}
+
+.requirements-table th,
+.requirements-table td {
+    border-right: 2px solid #AFAFAF;
+    border-bottom: 3px solid #AFAFAF;
 }

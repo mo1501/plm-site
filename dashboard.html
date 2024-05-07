@@ -38,8 +38,9 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-4 info-and-milestones-section">
-                <div class="project-info-section" style="border-radius: 20px; height: 30%; margin-bottom: 8rem;">
+            <div class="col-4 info-and-milestones-section bg-danger" style="">
+                <div class="project-info-section"
+                    style="border-radius: 20px; height: 30%;width: 100%;margin: 1rem; margin-bottom: 5rem; ">
                     <div class="card" style="width: 100%; height: 100%;">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: x-large; font-weight: 800; color: red;">KCB Extreme
@@ -49,17 +50,35 @@
                                 SOFTWARE DEFINED NETWORK WIDE AREA NETWORK FOR KCB BANK DATA CENTERS
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="color: #AFAFAF;">Customer: Kenya Commercial Bank</li>
-                            <li class="list-group-item" style="color: #AFAFAF;">Contractor: Konvergenz</li>
-                            <li class="list-group-item" style="color: red;">Target End Date: Apr 26 2024</li>
-                            <li class="list-group-item" style="color: #AFAFAF;">Partners: Milky Way Limited</li>
+                            <li class="list-group-item">
+                                <p style="color: black; display: inline;">Customer:</p>
+                                <p style="color: #AFAFAF; display: inline;">Kenya Commercial Bank</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p style="color: black; display: inline;">Contractor:</p>
+                                <p style="color: #AFAFAF; display: inline;">Konvergenz</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p style="color: red; display: inline;">Target End Date:</p>
+                                <p style="color: red; display: inline;">Apr 26 2024</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p style="color: black; display: inline;">Partners:</p>
+                                <p style="color: #AFAFAF; display: inline;">Milky Way Limited</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="project-milestones-section" style="border-radius: 20px; height: 50%;">
+                <div class="project-milestones-section" style="border-radius: 20px; height: 50%; width: 100%;">
                     <p style="text-align: center; color: #00AEEF; margin: 0rem auto; font-size: large;">Milestones</p>
-                    <table class="table" style="font-size: 0.9rem;">
-                        <thead>
+                    <table class="milestones-table table" style="
+                    font-size: 0.9rem;
+                    border-collapse: collapse;
+                    border-spacing: 0.7rem;
+                    text-align: start;
+                    
+                    ">
+                        <thead style="border-bottom: 2px solid #AFAFAF;">
                             <tr>
                                 <th scope="col" style="color: #AFAFAF;">Milestone</th>
                                 <th scope="col" style="color: #AFAFAF;">Due Date</th>
@@ -67,40 +86,40 @@
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider">
-                            <tr>
+                        <tbody>
+                            <tr style="border-bottom: 2px solid #00AEEF;">
                                 <th scope="row">Preparation phase</th>
                                 <td>Oct 05, 2023</td>
                                 <td style="color: #03B60A">Completed</td>
 
                             </tr>
-                            
-                            <tr>
+
+                            <tr style="border-bottom: 2px solid #00AEEF;">
                                 <th scope="row">Planning phase</th>
                                 <td>Oct 15, 2023</td>
                                 <td style="color: #03B60A">Completed</td>
                             </tr>
-                            <tr>
+                            <tr style="border-bottom: 2px solid #00AEEF;">
                                 <th scope="row">Implementation phase</th>
                                 <td>Oct 25, 2023</td>
                                 <td style="color: #03B60A">Completed</td>
                             </tr>
-                            <tr>
+                            <tr style="border-bottom: 2px solid #00AEEF;">
                                 <th scope="row">Testing phase</th>
                                 <td>Nov 05, 2023</td>
                                 <td style="color: #FDA905">Pending</td>
                             </tr>
-                            <tr>
+                            <tr style="border-bottom: 2px solid #00AEEF;">
                                 <th scope="row">Project Closure</th>
                                 <td>Nov 15, 2023</td>
                                 <td style="color: #FDA905">Pending</td>
                             </tr>
-                            <tr>
+                            <tr style="border-bottom: 2px solid #00AEEF;">
                                 <th scope="row">Training phase</th>
                                 <td>Nov 25, 2023</td>
                                 <td style="color: #FDA905">Pending</td>
                             </tr>
-                            <tr>
+                            <tr style="border-bottom: 2px solid #00AEEF;">
                                 <th scope="row">Support phase</th>
                                 <td>Dec 05, 2023</td>
                                 <td style="color: #FDA905">Pending</td>
@@ -110,95 +129,127 @@
                     </table>
                 </div>
             </div>
-            <div class="col-8 rag-dependencies-okrs-section">
-                <div class="container ">
+            <div class="col-8 rag-dependencies-okrs-section bg-info">
+                <div class="container">
                     <div class="row">
-                        <div class="col-3 weekly-rag-container">
-                            <div class="weekly-rag-section">
+                        <div class="col-3 weekly-rag-section">
+                            <p
+                                style="text-align: center; font-size: 1rem; font-weight: 900; color: #00AEEF; margin: 0; margin-bottom: 0.5rem;">
+                                Weekly RAG</p>
+                            <div class="weekly-rags-container" style="display: flex; flex-direction: row;">
                                 <div class="weekly-rag">
-                                    <p style="text-align: center; ">Last Week</p>
-                                    <p>50%</p>
+                                    <p
+                                        style="text-align: center; font-size: 0.8rem; font-weight: 900; color: #AFAFAF; margin: 0; ">
+                                        Last Week</p>
+                                    <p
+                                        style="text-align: center; font-size: 1.5rem; font-weight: 900; color: #FDA905; margin: 0; ">
+                                        50%</p>
                                 </div>
                                 <hr class="vertical-rule">
                                 <div class="weekly-rag">
-                                    <p style="text-align: center; ">This Week</p>
-                                    <p>50%</p>
+                                    <p
+                                        style="text-align: center; font-size: 0.8rem; font-weight: 900; color: #AFAFAF; margin: 0; ">
+                                        Last Week</p>
+                                    <p
+                                        style="text-align: center; font-size: 1.5rem; font-weight: 900; color: red; margin: 0; ">
+                                        20%</p>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="col-3 risks-issues-container">
-                            <p style="text-align: center; margin-top: 2px; margin-bottom: 0px;">Risks/Issues</p>
+                            <p
+                                style="text-align: center; font-size: 1rem; font-weight: 900; color: #00AEEF; margin: 0.5rem; margin-bottom: 0.5rem;">
+                                Risks/Issues</p>
                             <div class="risks-issues-section">
                                 <div class="issue-section">
                                     <div class="risks-notification">
                                         <p
-                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
+                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0.2rem; ">
                                             Pending</p>
                                         <div class="notification" style="border: 4px solid red;border-radius: 50%;">
-                                            <p style="text-align: center; margin: 0.3rem; font-size: 1.5rem;">2</p>
+                                            <p style="text-align: center; margin: 0rem; font-size: 1.5rem;">2</p>
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="vertical-rule">
+                                <hr class="vertical-rule1" style="
+                                 border-left: 3px solid black;
+                                 height: 80px;
+                                 margin: 0 20px;
+                                ">
                                 <div class="issue-section">
                                     <div class="risks-notification">
                                         <p
-                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
+                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0.2rem; ">
                                             Ongoing</p>
-                                        <div class="notification" style="border: 4px solid aqua;border-radius: 50%;">
-                                            <p style="text-align: center; margin: 0.3rem; font-size: 1.5rem;">3</p>
+                                        <div class="notification" style="border: 4px solid #00AEEF;border-radius: 50%;">
+                                            <p style="text-align: center; margin: 0rem; font-size: 1.5rem;">3</p>
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="vertical-rule">
+                                <hr class="vertical-rule1" style="
+                                 border-left: 3px solid black;
+                                 height: 80px;
+                                 margin: 0 20px;
+                                ">
                                 <div class="issue-section">
                                     <div class="risks-notification">
                                         <p
-                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
+                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0.2rem; ">
                                             Resolved</p>
                                         <div class="notification" style="border: 4px solid green;border-radius: 50%;">
-                                            <p style="text-align: center; margin: 0.3rem; font-size: 1.5rem;">5</p>
+                                            <p style="text-align: center; margin: 0rem; font-size: 1.5rem;">5</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-3 dependecies-container">
-                            <p style="text-align: center; margin-top: 2px; margin-bottom: 0px;">Dependencies</p>
+                            <p
+                                style="text-align: center; font-size: 1rem; font-weight: 900; color: #00AEEF; margin: 0.5rem; margin-bottom: 0.5rem;">
+                                Dependencies</p>
                             <div class="risks-issues-section">
                                 <div class="issue-section">
                                     <div class="risks-notification">
                                         <p
-                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
+                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0.2rem; ">
                                             Pending</p>
                                         <div class="notification" style="border: 4px solid red;border-radius: 50%;">
-                                            <p style="text-align: center; margin: 0.3rem; font-size: 1.5rem;">2</p>
+                                            <p style="text-align: center; margin: 0rem; font-size: 1.5rem;">2</p>
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="vertical-rule">
+                                <hr class="vertical-rule1" style="
+                                 border-left: 3px solid black;
+                                 height: 80px;
+                                 margin: 0 20px;
+                                ">
                                 <div class="issue-section">
                                     <div class="risks-notification">
                                         <p
-                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
+                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0.2rem; ">
                                             Ongoing</p>
-                                        <div class="notification" style="border: 4px solid aqua;border-radius: 50%; ">
-                                            <p style="text-align: center; margin: 0.3rem; font-size: 1.5rem;">3</p>
+                                        <div class="notification"
+                                            style="border: 4px solid #00AEEF;border-radius: 50%; ">
+                                            <p style="text-align: center; margin: 0rem; font-size: 1.5rem;">3</p>
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="vertical-rule">
+                                <hr class="vertical-rule1" style="
+                                 border-left: 3px solid black;
+                                 height: 80px;
+                                 margin: 0 20px;
+                                ">
                                 <div class="issue-section">
                                     <div class="risks-notification">
                                         <p
-                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0px; ">
+                                            style="text-align: center; font-size: small; color: grey; margin-bottom: 0.2rem; ">
                                             Resolved</p>
                                         <div class="notification" style="border: 4px solid green;border-radius: 50%;">
                                             <p style="text-align: center; 
-                                            margin: 0.3rem; 
+                                            margin: 0rem; 
                                             font-size: 1.5rem;
-                                            
                                             ">5</p>
                                         </div>
                                     </div>
@@ -216,20 +267,26 @@
                 ">
                     <div class="okr-section-header"
                         style="display: flex; flex-direction: column; justify-content: center;">
-                        <p style="text-align: center; margin-bottom: 0;">Ongoing and planned activities for this week
+                        <p style="
+                        text-align: center; 
+                        font-size: 1rem; 
+                        font-weight: 900; 
+                        color: #00AEEF; 
+                        margin: 0.4rem; 
+                        margin-bottom: 0.2rem; 
+                        border-bottom: 2px solid #AFAFAF;">Ongoing and planned activities for this week
                         </p>
-                        <hr>
+
                     </div>
-                    <div class="this-week-okr-section">
-                        <p>This Week's OKRS</p>
+                    <div class=" this-week-okr-section">
+                        <p style="color: #AFAFAF; font-weight: 900;margin-bottom: 0px;">This Week's OKRS</p>
                         <div class="okr-container" style="display: flex; 
                             flex-direction: row; 
                             justify-content: space-between; 
                             align-items: center; 
-                            margin: 1rem;
+                            margin: 0rem;
                             height: 4rem;
-                            border: 1px solid black;
-                            border-radius: 20px;
+                            border-bottom: 1px solid #AFAFAF;
                             ">
                             <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
                             <div class="assinged-to-container" style="display: flex; 
@@ -238,26 +295,30 @@
                                 align-items: center;
                                 margin: 1rem;
                                 ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <p style="margin: 1rem; color:#00AEEF; font-size: 0.9rem;">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
-                                    height: 3rem;
-                                    width: 3rem;
+                                    height: 2rem;
+                                    width: 2rem;
                                     display: flex;
                                     margin-right: 1rem;
                                     justify-content: center;
                                     align-items: center; 
+                                    color: white;
+                                    font-size: small;
                                     ">
                                     MA
                                 </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
-                                    height: 3rem;
-                                    width: 3rem;
+                                    height: 2rem;
+                                    width: 2rem;
                                     margin-right: 1rem;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
+                                    font-size: small;
                                     ">
                                     BH
                                 </div>
@@ -271,6 +332,8 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
+                            font-size: small;
                             ">
                                 Completed
                             </div>
@@ -291,32 +354,34 @@
                                 align-items: center;
                                 margin: 1rem;
                                 ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <p style="margin: 1rem; color:#00AEEF">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     display: flex;
                                     margin-right: 1rem;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     MA
                                 </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     margin-right: 1rem;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     BH
                                 </div>
                             </div>
                             <div class="status-container " style="
-                            background-color: #35FA03;
+                            background-color: #00AEEF;
                             border-radius: 1rem;
                             height: 2rem;
                             width: 6rem;
@@ -324,8 +389,66 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
                             ">
-                                Completed
+                                Ongoing
+                            </div>
+                        </div>
+                        <p style="color: #AFAFAF; font-weight: 900;">Next Week's OKRS</p>
+                        <div class="okr-container" style="display: flex; 
+                            flex-direction: row; 
+                            justify-content: space-between; 
+                            align-items: center; 
+                            margin: 1rem;
+                            height: 4rem;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            ">
+                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
+                            <div class="assinged-to-container" style="display: flex; 
+                                flex-direction: row; 
+                                justify-content: space-around;
+                                align-items: center;
+                                margin: 1rem;
+                                ">
+                                <p style="margin: 1rem; color:#00AEEF">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    display: flex;
+                                    margin-right: 1rem;
+                                    justify-content: center;
+                                    align-items: center; 
+                                    color: white;
+                                    ">
+                                    MA
+                                </div>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
+                                    border-radius: 50%;
+                                    height: 3rem;
+                                    width: 3rem;
+                                    margin-right: 1rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: white; 
+                                    ">
+                                    BH
+                                </div>
+                            </div>
+                            <div class="status-container " style="
+                            background-color: red;
+                            border-radius: 1rem;
+                            height: 2rem;
+                            width: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center; 
+                            margin: 1rem;
+                            color: white;
+                            ">
+                                Pending
                             </div>
                         </div>
                         <div class="okr-container" style="display: flex; 
@@ -344,32 +467,34 @@
                                 align-items: center;
                                 margin: 1rem;
                                 ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <p style="margin: 1rem; color:#00AEEF">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     display: flex;
                                     margin-right: 1rem;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     MA
                                 </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     margin-right: 1rem;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     BH
                                 </div>
                             </div>
                             <div class="status-container " style="
-                            background-color: #35FA03;
+                            background-color: red;
                             border-radius: 1rem;
                             height: 2rem;
                             width: 6rem;
@@ -377,61 +502,9 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
                             ">
-                                Completed
-                            </div>
-                        </div>
-                        <div class="okr-container" style="display: flex; 
-                            flex-direction: row; 
-                            justify-content: space-between; 
-                            align-items: center; 
-                            margin: 1rem;
-                            height: 4rem;
-                            border: 1px solid black;
-                            border-radius: 20px;
-                            ">
-                            <p style="margin: 1rem;">Confirm bookings for Batch 2</p>
-                            <div class="assinged-to-container" style="display: flex; 
-                                flex-direction: row; 
-                                justify-content: space-around;
-                                align-items: center;
-                                margin: 1rem;
-                                ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
-                                    border-radius: 50%;
-                                    height: 3rem;
-                                    width: 3rem;
-                                    display: flex;
-                                    margin-right: 1rem;
-                                    justify-content: center;
-                                    align-items: center; 
-                                    ">
-                                    MA
-                                </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
-                                    border-radius: 50%;
-                                    height: 3rem;
-                                    width: 3rem;
-                                    margin-right: 1rem;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center; 
-                                    ">
-                                    BH
-                                </div>
-                            </div>
-                            <div class="status-container " style="
-                            background-color: #35FA03;
-                            border-radius: 1rem;
-                            height: 2rem;
-                            width: 6rem;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center; 
-                            margin: 1rem;
-                            ">
-                                Completed
+                                Pending
                             </div>
                         </div>
                     </div>
@@ -445,8 +518,13 @@
                 ">
                     <div class="requirements-section-header"
                         style="display: flex; flex-direction: column; justify-content: center;">
-                        <p style="text-align: center; margin-bottom: 0;">Requirements and Key Dependencies</p>
-                        <hr>
+                        <p style="text-align: center; 
+                        font-size: 1rem; 
+                        font-weight: 900; 
+                        color: #00AEEF; 
+                        margin: 0.4rem; 
+                        margin-bottom: 0.2rem; 
+                        border-bottom: 2px solid #AFAFAF;">Requirements and Key Dependencies</p>
                     </div>
                     <div class="requirements-dependecies-section">
                         <div class="okr-container" style="display: flex; 
@@ -465,26 +543,28 @@
                                 align-items: center;
                                 margin: 1rem;
                                 ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <p style="margin: 1rem; color:#00AEEF">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     display: flex;
                                     margin-right: 1rem;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     MA
                                 </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     margin-right: 1rem;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     BH
                                 </div>
@@ -518,32 +598,34 @@
                                 align-items: center;
                                 margin: 1rem;
                                 ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <p style="margin: 1rem; color:#00AEEF">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     display: flex;
                                     margin-right: 1rem;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     MA
                                 </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     margin-right: 1rem;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     BH
                                 </div>
                             </div>
                             <div class="status-container " style="
-                            background-color: #35FA03;
+                            background-color: #00AEEF;
                             border-radius: 1rem;
                             height: 2rem;
                             width: 6rem;
@@ -551,8 +633,9 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
                             ">
-                                Completed
+                                Ongoing
                             </div>
                         </div>
                         <div class="okr-container" style="display: flex; 
@@ -571,32 +654,34 @@
                                 align-items: center;
                                 margin: 1rem;
                                 ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <p style="margin: 1rem; color:#00AEEF">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     display: flex;
                                     margin-right: 1rem;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     MA
                                 </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     margin-right: 1rem;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     BH
                                 </div>
                             </div>
                             <div class="status-container " style="
-                            background-color: #35FA03;
+                            background-color: red;
                             border-radius: 1rem;
                             height: 2rem;
                             width: 6rem;
@@ -604,8 +689,9 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
                             ">
-                                Completed
+                                Pending
                             </div>
                         </div>
                         <div class="okr-container" style="display: flex; 
@@ -624,19 +710,20 @@
                                 align-items: center;
                                 margin: 1rem;
                                 ">
-                                <p style="margin: 1rem;">Assigned to:</p>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <p style="margin: 1rem; color:#00AEEF">Assigned to:</p>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
                                     display: flex;
                                     margin-right: 1rem;
                                     justify-content: center;
-                                    align-items: center; 
+                                    align-items: center;
+                                    color: white; 
                                     ">
                                     MA
                                 </div>
-                                <div class="account-avatar-container" style="background-color: aqua; 
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                                     border-radius: 50%;
                                     height: 3rem;
                                     width: 3rem;
@@ -644,12 +731,13 @@
                                     display: flex;
                                     justify-content: center;
                                     align-items: center; 
+                                    color: white;
                                     ">
                                     BH
                                 </div>
                             </div>
                             <div class="status-container " style="
-                            background-color: #35FA03;
+                            background-color: red;
                             border-radius: 1rem;
                             height: 2rem;
                             width: 6rem;
@@ -657,8 +745,9 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
                             ">
-                                Completed
+                                Pending
                             </div>
                         </div>
                     </div>
@@ -666,34 +755,42 @@
                 <div class="requirements-section"></div>
             </div>
         </div>
-    </div>
-    <div class="container col-12 key-issues-and-risks-section" style="
-        margin: 3rem;
+        <div class="container col-12 key-issues-and-risks-section bg-success" style="
+        margin: 1rem;
         margin-top: 1rem;
         background-color: white;
         height: 25rem;
-        width: 100%;
+        width: 95%;
+        border-radius: 20px;
+        border: 3px solid #FDA905;
     ">
-        <div class="requirements-section-header"
-            style="display: flex; flex-direction: column; justify-content: center; border-radius: 20px;">
-            <p style="text-align: center; margin-bottom: 0;">Key Risks, Issues and Decisions</p>
-            <table class="table align-middle">
-                <thead>
-                    <tr>
-                        <th scope="col">Issue</th>
-                        <th scope="col">Support Required</th>
-                        <th scope="col">Escalated To</th>
-                        <th scope="col">Priority</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Created On</th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
-                        <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
-                        <td>
-                            <div class="account-avatar-container" style="background-color: aqua; 
+            <div class="requirements-section-header"
+                style="display: flex; flex-direction: column; justify-content: center; border-radius: 20px;">
+                <p style="text-align: center; margin-bottom: 0; color: #00AEEF; margin: 0.2rem; font-weight: 700;">Key
+                    Risks, Issues and Decisions</p>
+                <table class="requirements-table table align-middle" style="
+            font-size: 0.9rem;
+            border-collapse: collapse;
+            border-spacing: 0.7rem;
+            text-align: start;
+            
+            ">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="color: #AFAFAF; font-weight: 700;">Issue</th>
+                            <th scope="col" style="color: #AFAFAF; font-weight: 700;">Support Required</th>
+                            <th scope="col" style="color: #AFAFAF; font-weight: 700;">Escalated To</th>
+                            <th scope="col" style="color: #AFAFAF; font-weight: 700;">Priority</th>
+                            <th scope="col" style="color: #AFAFAF; font-weight: 700;">Status</th>
+                            <th scope="col" style="color: #AFAFAF; font-weight: 700;">Created On</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
+                            <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
+                            <td>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                         border-radius: 50%;
                         height: 3rem;
                         width: 3rem;
@@ -701,13 +798,14 @@
                         display: flex;
                         justify-content: center;
                         align-items: center; 
+                        color: white;
                         ">
-                                BH
-                            </div>
-                        </td>
-                        <td>HIGH</td>
-                        <td>
-                            <div class="status-container " style="
+                                    BH
+                                </div>
+                            </td>
+                            <td style="color: red; font-weight: 900;">HIGH</td>
+                            <td>
+                                <div class="status-container " style="
                             background-color: #35FA03;
                             border-radius: 1rem;
                             height: 2rem;
@@ -717,16 +815,16 @@
                             align-items: center; 
                             margin: 1rem;
                             ">
-                                Completed
-                            </div>
-                        </td>
-                        <td>Oct 23,2023</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
-                        <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
-                        <td>
-                            <div class="account-avatar-container" style="background-color: aqua; 
+                                    Completed
+                                </div>
+                            </td>
+                            <td>Oct 23,2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
+                            <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
+                            <td>
+                                <div class="account-avatar-container" style="background-color: #00AEEF; 
                         border-radius: 50%;
                         height: 3rem;
                         width: 3rem;
@@ -734,14 +832,15 @@
                         display: flex;
                         justify-content: center;
                         align-items: center; 
+                        color: white;
                         ">
-                                BH
-                            </div>
-                        </td>
-                        <td>HIGH</td>
-                        <td>
-                            <div class="status-container " style="
-                            background-color: yellow;
+                                    BH
+                                </div>
+                            </td>
+                            <td style="color: #FFA113; font-weight: 900;">MEDIUM</td>
+                            <td>
+                                <div class="status-container " style="
+                            background-color: red;
                             border-radius: 1rem;
                             height: 2rem;
                             width: 6rem;
@@ -749,32 +848,34 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
                             ">
-                                Pending
-                            </div>
-                        </td>
-                        <td>Oct 23,2023</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
-                        <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
-                        <td>
-                            <div class="account-avatar-container" style="background-color: blueviolet; 
+                                    Pending
+                                </div>
+                            </td>
+                            <td>Oct 23,2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hiperdist are non responsive on the ETA for the Extreme swirches</th>
+                            <td>Varius quisque pharetra vestibulum non. Eu et leo convallis aliqua</td>
+                            <td>
+                                <div class="account-avatar-container" style="background-color: blueviolet; 
                         border-radius: 50%;
                         height: 3rem;
                         width: 3rem;
                         margin-right: 1rem;
                         display: flex;
                         justify-content: center;
-                        align-items: center; 
+                        align-items: center;
+                        color: white; 
                         ">
-                                BH
-                            </div>
-                        </td>
-                        <td>HIGH</td>
-                        <td>
-                            <div class="status-container " style="
-                            background-color: aqua;
+                                    BH
+                                </div>
+                            </td>
+                            <td style="color: #03B60A; font-weight: 900;">LOW</td>
+                            <td>
+                                <div class="status-container " style="
+                            background-color: #00AEEF;
                             border-radius: 1rem;
                             height: 2rem;
                             width: 6rem;
@@ -782,16 +883,19 @@
                             justify-content: center;
                             align-items: center; 
                             margin: 1rem;
+                            color: white;
                             ">
-                                Ongoing
-                            </div>
-                        </td>
-                        <td>Oct 23,2023</td>
-                    </tr>
-                </tbody>
-            </table>
+                                    Ongoing
+                                </div>
+                            </td>
+                            <td>Oct 23,2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
+
 
 
 
